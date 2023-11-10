@@ -56,7 +56,7 @@ const cars = [
         manufacturer: 'Seat',
         model: 'Ibiza',
         type: 'metano'
-    }
+    }, /* mancava la virgola dopo la graffa */
     {
         manufacturer: 'Audi',
         model: 'R8',
@@ -64,15 +64,15 @@ const cars = [
     },
 ];
 
-const gasolineCars = cars.filter( (auto) >= auto.type === 'benzina');
+const gasolineCars = cars.filter( (auto) => auto.type === 'benzina'); /* arrow functions scritta come operatore maggiore/uguale, "b" di benzina minuscola*/
 
 const dieselCars = cars.filter( (auto) => {
     auto.type === 'diesel';
-});
+}); /* manca il return, "d" di diesel minuscola*/
 
 const otherCars = cars.filter( (auto) => {
     return auto.type !== 'benzina' || auto.type !== 'diesel';
-});
+}); /* funziona ok ma ritornera' tutti i tipi di auto perche' e' stato usato operatore OR anziche' AND, l' obiettivo presumo fosse quello di ottenere un array di auto non alimentate a benzina o gasolio.
 
 console.log('Auto a benzina');
 console.log('*******************************');
