@@ -15,6 +15,7 @@ for (let i = 0; i > 5; i++) {
     console.log(i);
 }
 // non entra mai nel ciclo poiche' i non e' maggiore di 5
+
 // SOLUZIONE
 for (let i = 0; i < 5; i++) {
     console.log(i);
@@ -30,6 +31,7 @@ function addIfEven(num) {
     return num;
 }
 // l operatore = stabilisce il valore della variabile num a 0, riportera sempre 5.
+
 // SOLUZIONE
 function addIfEven(num) {
     if (num % 2 === 0) {
@@ -47,6 +49,7 @@ function loopToFive() {
     }
 }
 // Virgole al posto dei punti e virgola
+
 // SOLUZIONE
 function loopToFive() {
     for (let i = 0; i < 5; i++) {
@@ -74,7 +77,7 @@ displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
 // 6_Non dobbiamo pushare index ma l' elemento corrente del ciclo.
 // 7_Return deve essere esterno al ciclo.
 
-
+// SOLUZIONE
 function displayEvenNumbers() {
     let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
     let evenNumbers = [];
